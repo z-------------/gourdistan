@@ -1,0 +1,78 @@
+@-webkit-keyframes flash {
+    0% { color: red }
+    0.1% { color: blue }
+    25% { color: blue }
+    25.1% { color: lime }
+    50% { color: lime }
+    50.1% { color: pink }
+    75% { color: pink }
+    75.1% { color: blue }
+    85% { color: blue }
+    85.1% { color: red }
+    100% { color: red }
+}
+
+@-webkit-keyframes rotate {
+    from { -webkit-transform: rotate(0) }
+    to { -webkit-transform: rotate(1turn) }
+}
+
+@-webkit-keyframes pulse {
+    from { -webkit-transform: scale(1) }
+    to { -webkit-transform: scale(0.5) }
+}
+
+html {
+    cursor: url(images-folder/cursor.png), auto;
+}
+
+body {
+    font-family: "Times New Roman", serif;
+    color: red;
+    
+    background-image: url(images-folder/ensign.gif);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: underline;
+}
+
+p {
+    background: yellow;
+    color: red;
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+.flash {
+    -webkit-animation: flash 1s infinite linear;
+    font-style: italic;
+}
+
+.rotate {
+    -webkit-animation: rotate 5s infinite linear;
+}
+
+table {
+    text-align: center;
+}
+
+td, th {
+    background-color: yellow;
+    color: red;
+    border-style: groove;
+}
+
+tr:nth-of-type(odd) {
+    font-size: 1.5em;
+    font-weight: 700;
+    text-align: right;
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+tr:nth-of-type(3n) {
+    font-style: italic;
+}
+
+table img {
+    -webkit-animation: pulse 2s infinite;
+}
